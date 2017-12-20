@@ -10,7 +10,7 @@ $( document ).ready(function(){
   var num2= Math.floor(Math.random()*11+1)
   var num3= Math.floor(Math.random()*11+1)
   var num4= Math.floor(Math.random()*11+1)
-  // Setting up random numbers for each jewel
+  // Jewel values 
   // Random number has to be between 1 - 12
   // 
   var userTotal= 0; 
@@ -33,14 +33,14 @@ function reset(){
       } 
 //adds the wins to the userTotal
 function yay(){
-alert("You won!");
+alert("Congratulations!! You won!");
   wins++; 
   $('#numberWins').text(wins);
   reset();
 }
 //addes the losses to the userTotal
 function loser(){
-alert ("You lose!");
+alert ("Sorry.. You lose");
   losses++;
   $('#numberLosses').text(losses);
   reset()
